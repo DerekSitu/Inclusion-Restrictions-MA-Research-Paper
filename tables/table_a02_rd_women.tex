@@ -1,0 +1,29 @@
+\begin{table}
+
+\caption{Regression Discontinuity Results: Women}
+\centering
+\begin{tabular}[t]{lccc}
+\toprule
+  & Bachelors & Masters & Doctorates\\
+\midrule
+Conventional & \num{0.032} & \num{0.066} & \num{-0.043}\\
+ & (\num{0.021}) & (\num{0.043}) & \vphantom{1} (\num{0.076})\\
+Bias-Corrected & \num{0.036}+ & \num{0.101}* & \num{-0.057}\\
+ & (\num{0.021}) & (\num{0.043}) & (\num{0.076})\\
+Robust & \num{0.036} & \num{0.101}* & \num{-0.057}\\
+ & (\num{0.025}) & (\num{0.049}) & (\num{0.097})\\
+\midrule
+Obs. Left & \num{970} & \num{209} & \num{226}\\
+Obs. Right & \num{2341} & \num{1007} & \num{469}\\
+Effective Obs. Left & \num{625} & \num{110} & \num{116}\\
+Effective Obs. Right & \num{1054} & \num{250} & \num{147}\\
+Cutoff & \num{4} & \num{1} & \num{5}\\
+\bottomrule
+\multicolumn{4}{l}{\rule{0pt}{1em}This table presents regression discontinuity estimates
+                with proportion of degrees awarded to women
+                as the outcome. Bias-corrected estimates use second-order polynomial
+                to approximate curvatures near the cutoff. Heteroskedasticity-robust
+                standard errors are also reported for bias-corrected estimates.}\\
+\multicolumn{4}{l}{\rule{0pt}{1em}+ p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
+\end{tabular}
+\end{table}

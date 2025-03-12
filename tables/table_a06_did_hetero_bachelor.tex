@@ -1,0 +1,49 @@
+
+\usepackage{booktabs}
+
+\begin{table}
+\caption{DiD Heterogeneity Analysis: Bachelor's Degree}
+\begin{center}
+\begin{tabular}{l c c c c}
+\toprule
+ & \multicolumn{2}{c}{Top/Non-Top 75} & \multicolumn{2}{c}{Red/Blue State} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Minorities & Women & Minorities & Women \\
+\midrule
+Treat $\times$ Post                          & $-0.011$  & $-0.006$      & $0.188^{**}$  & $0.029$       \\
+                                             & $(0.017)$ & $(0.015)$     & $(0.055)$     & $(0.021)$     \\
+Top Institution                              & $-0.033$  & $-0.022^{+}$  &               &               \\
+                                             & $(0.020)$ & $(0.013)$     &               &               \\
+Treat $\times$ Post $\times$ Top Institution & $-0.004$  & $0.067^{***}$ &               &               \\
+                                             & $(0.028)$ & $(0.015)$     &               &               \\
+Red State                                    &           &               & $0.084^{*}$   & $0.040^{***}$ \\
+                                             &           &               & $(0.034)$     & $(0.011)$     \\
+Blue State                                   &           &               & $0.073^{**}$  & $0.055^{***}$ \\
+                                             &           &               & $(0.026)$     & $(0.011)$     \\
+Treat $\times$ Post $\times$ Red State       &           &               & $-0.203^{**}$ & $-0.044$      \\
+                                             &           &               & $(0.065)$     & $(0.041)$     \\
+Treat $\times$ Post $\times$ Blue State      &           &               & $-0.101$      & $-0.037$      \\
+                                             &           &               & $(0.088)$     & $(0.026)$     \\
+\midrule
+Year FE                                      & Yes       & Yes           & Yes           & Yes           \\
+State FE                                     & Yes       & Yes           & No            & No            \\
+Num. obs.                                    & $18202$   & $18637$       & $18147$       & $18582$       \\
+Num. groups: as.factor(year)                 & $27$      & $27$          & $27$          & $27$          \\
+Num. groups: state                           & $52$      & $52$          & $$            & $$            \\
+R$^2$ (full model)                           & $0.224$   & $0.040$       & $0.046$       & $0.010$       \\
+R$^2$ (proj model)                           & $0.002$   & $0.001$       & $0.029$       & $0.004$       \\
+Adj. R$^2$ (full model)                      & $0.220$   & $0.036$       & $0.044$       & $0.009$       \\
+Adj. R$^2$ (proj model)                      & $0.002$   & $0.001$       & $0.029$       & $0.004$       \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of heterogenous
+                      treatment effects at the bachelor's level for top 75
+                      institutions vs. non-top 75 institutions (left 2 columns),
+                      and red/blue/purple states (right 2 columns). For top vs.
+                      non-top regressions, non-top serves as the baseline level,
+                      and for red/blue/purple states, purple is the baseline
+                      level.}}}
+\end{tabular}
+\label{table:coefficients}
+\end{center}
+\end{table}

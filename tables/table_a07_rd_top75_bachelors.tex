@@ -1,0 +1,29 @@
+\begin{table}
+
+\caption{RD Results: Top 75 \& Non-Top 75 Institutions, Bachelor's Degree}
+\centering
+\begin{tabular}[t]{lcccc}
+\toprule
+  & T75, Minorities & Non-T75, Minorities & T75, Women & Non-T75, Women\\
+\midrule
+Conventional & \num{-0.016} & \num{-0.020} & \num{0.005} & \num{0.034}\\
+ & (\num{0.046}) & (\num{0.045}) & (\num{0.019}) & \vphantom{1} (\num{0.024})\\
+Bias-Corrected & \num{-0.027} & \num{-0.033} & \num{-0.011} & \num{0.040}+\\
+ & (\num{0.046}) & (\num{0.045}) & (\num{0.019}) & (\num{0.024})\\
+Robust & \num{-0.027} & \num{-0.033} & \num{-0.011} & \num{0.040}\\
+ & (\num{0.055}) & (\num{0.051}) & (\num{0.023}) & (\num{0.029})\\
+\midrule
+Obs. Left & \num{116} & \num{839} & \num{116} & \num{854}\\
+Obs. Right & \num{330} & \num{1962} & \num{335} & \num{2006}\\
+Effective Obs. Left & \num{77} & \num{504} & \num{56} & \num{548}\\
+Effective Obs. Right & \num{152} & \num{787} & \num{85} & \num{902}\\
+Cutoff & \num{4} & \num{4} & \num{4} & \num{4}\\
+\bottomrule
+\multicolumn{5}{l}{\rule{0pt}{1em}This table presents regression discontinuity estimates
+                for top 75 institutions and non-top 75 instutitions separately.
+                Bias-corrected estimates use second-order polynomial
+                to approximate curvatures near the cutoff. Heteroskedasticity-robust
+                standard errors are also reported for bias-corrected estimates.}\\
+\multicolumn{5}{l}{\rule{0pt}{1em}+ p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,29 @@
+\begin{table}
+
+\caption{RD Results: Blue \& Red States, Bachelor's Degree}
+\centering
+\begin{tabular}[t]{lcccc}
+\toprule
+  & Blue, Minorities & Red, Minorities & Blue, Women & Red, Women\\
+\midrule
+Conventional & \num{-0.034} & \num{0.028} & \num{0.037} & \num{0.117}\\
+ & (\num{0.053}) & (\num{0.056}) & (\num{0.027}) & \vphantom{1} (\num{0.196})\\
+Bias-Corrected & \num{-0.052} & \num{0.022} & \num{0.044} & \num{0.140}\\
+ & (\num{0.053}) & (\num{0.056}) & (\num{0.027}) & (\num{0.196})\\
+Robust & \num{-0.052} & \num{0.022} & \num{0.044} & \num{0.140}\\
+ & (\num{0.062}) & (\num{0.066}) & (\num{0.037}) & (\num{0.245})\\
+\midrule
+Obs. Left & \num{531} & \num{254} & \num{540} & \num{255}\\
+Obs. Right & \num{1763} & \num{67} & \num{1799} & \num{67}\\
+Effective Obs. Left & \num{387} & \num{47} & \num{288} & \num{24}\\
+Effective Obs. Right & \num{763} & \num{37} & \num{425} & \num{23}\\
+Cutoff & \num{4} & \num{4} & \num{4} & \num{4}\\
+\bottomrule
+\multicolumn{5}{l}{\rule{0pt}{1em}This table presents regression discontinuity estimates
+                for blue states and red states separately.
+                Bias-corrected estimates use second-order polynomial
+                to approximate curvatures near the cutoff. Heteroskedasticity-robust
+                standard errors are also reported for bias-corrected estimates.}\\
+\multicolumn{5}{l}{\rule{0pt}{1em}+ p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
+\end{tabular}
+\end{table}

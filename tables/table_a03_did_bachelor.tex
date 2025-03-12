@@ -1,0 +1,33 @@
+
+\usepackage{booktabs}
+
+\begin{table}
+\caption{Difference-in-Differences Results: Bachelor's Degree}
+\begin{center}
+\begin{tabular}{l c c c c}
+\toprule
+ & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Model 1 & Model 2 & Model 3 & Model 4 \\
+\midrule
+Treat $\times$ Post          & $-0.019$  & $-0.012$  & $0.006$   & $0.002$   \\
+                             & $(0.017)$ & $(0.017)$ & $(0.014)$ & $(0.015)$ \\
+\midrule
+Institution FE               & Yes       & No        & Yes       & No        \\
+State FE                     & No        & Yes       & No        & Yes       \\
+Num. obs.                    & $18202$   & $18202$   & $18637$   & $18637$   \\
+Num. groups: as.factor(year) & $27$      & $27$      & $27$      & $27$      \\
+Num. groups: institution     & $861$     & $$        & $876$     & $$        \\
+R$^2$ (full model)           & $0.641$   & $0.222$   & $0.409$   & $0.039$   \\
+R$^2$ (proj model)           & $0.000$   & $0.000$   & $0.000$   & $0.000$   \\
+Adj. R$^2$ (full model)      & $0.622$   & $0.219$   & $0.379$   & $0.035$   \\
+Adj. R$^2$ (proj model)      & $0.000$   & $-0.000$  & $-0.000$  & $-0.000$  \\
+Num. groups: state           & $$        & $52$      & $$        & $52$      \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of the
+                      treatment effect at the Bachelor's level.}}}
+\end{tabular}
+\label{table:coefficients}
+\end{center}
+\end{table}

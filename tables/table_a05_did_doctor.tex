@@ -1,0 +1,33 @@
+
+\usepackage{booktabs}
+
+\begin{table}
+\caption{Difference-in-Differences Results: Doctorate Degree}
+\begin{center}
+\begin{tabular}{l c c c c}
+\toprule
+ & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Model 1 & Model 2 & Model 3 & Model 4 \\
+\midrule
+Treat $\times$ Post          & $-0.023$  & $-0.018$  & $-0.037^{+}$ & $-0.043^{+}$ \\
+                             & $(0.039)$ & $(0.035)$ & $(0.022)$    & $(0.022)$    \\
+\midrule
+Institution FE               & Yes       & No        & Yes          & No           \\
+State FE                     & No        & Yes       & No           & Yes          \\
+Num. obs.                    & $2503$    & $2503$    & $3143$       & $3143$       \\
+Num. groups: as.factor(year) & $27$      & $27$      & $27$         & $27$         \\
+Num. groups: institution     & $140$     & $$        & $143$        & $$           \\
+R$^2$ (full model)           & $0.240$   & $0.088$   & $0.149$      & $0.070$      \\
+R$^2$ (proj model)           & $0.000$   & $0.000$   & $0.001$      & $0.001$      \\
+Adj. R$^2$ (full model)      & $0.186$   & $0.061$   & $0.100$      & $0.049$      \\
+Adj. R$^2$ (proj model)      & $-0.000$  & $-0.000$  & $0.000$      & $0.000$      \\
+Num. groups: state           & $$        & $44$      & $$           & $44$         \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of the
+                      treatment effect at the Doctorate level.}}}
+\end{tabular}
+\label{table:coefficients}
+\end{center}
+\end{table}

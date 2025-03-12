@@ -1,0 +1,218 @@
+\begin{table}
+\caption{Regression Discontinuity Results: Underrepresented Minorities}
+\centering
+\begin{tabularx}{\textwidth}{l>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\toprule
+  & Bachelors & Masters & Doctorates\\
+\midrule
+Conventional & \num{-0.018} & \num{-0.002} & \num{0.055}\\
+ & (\num{0.041}) & (\num{0.063}) & (\num{0.092})\\
+Bias-Corrected & \num{-0.031} & \num{0.016} & \num{0.076}\\
+ & (\num{0.041}) & (\num{0.063}) & (\num{0.092})\\
+Robust & \num{-0.031} & \num{0.016} & \num{0.076}\\
+ & (\num{0.048}) & (\num{0.074}) & (\num{0.111})\\
+\midrule
+Obs. Left & \num{955} & \num{186} & \num{171}\\
+Obs. Right & \num{2292} & \num{934} & \num{401}\\
+Effective Obs. Left & \num{576} & \num{123} & \num{62}\\
+Effective Obs. Right & \num{923} & \num{308} & \num{78}\\
+Cutoff & \num{4} & \num{1} & \num{5}\\
+\bottomrule
+\multicolumn{4}{l}{\scriptsize \rule{0pt}{1em}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$}\\
+\multicolumn{4}{p{\textwidth}}{\rule{0pt}{1em}This table presents regression discontinuity estimates with the proportion of degrees awarded to underrepresented minorities as the outcome. Bias-corrected estimates use a second-order polynomial to approximate curvatures near the cutoff. Heteroskedasticity-robust standard errors are also reported for bias-corrected estimates.}\\
+\end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{Regression Discontinuity Results: Women}
+\centering
+\begin{tabularx}{\textwidth}{l>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\toprule
+  & Bachelors & Masters & Doctorates\\
+\midrule
+Conventional & \num{0.032} & \num{0.066} & \num{-0.043}\\
+ & (\num{0.021}) & (\num{0.043}) & (\num{0.076})\\
+Bias-Corrected & \num{0.036}^+ & \num{0.101}* & \num{-0.057}\\
+ & (\num{0.021}) & (\num{0.043}) & (\num{0.076})\\
+Robust & \num{0.036} & \num{0.101}* & \num{-0.057}\\
+ & (\num{0.025}) & (\num{0.049}) & (\num{0.097})\\
+\midrule
+Obs. Left & \num{970} & \num{209} & \num{226}\\
+Obs. Right & \num{2341} & \num{1007} & \num{469}\\
+Effective Obs. Left & \num{625} & \num{110} & \num{116}\\
+Effective Obs. Right & \num{1054} & \num{250} & \num{147}\\
+Cutoff & \num{4} & \num{1} & \num{5}\\
+\bottomrule
+\multicolumn{4}{l}{\scriptsize \rule{0pt}{1em}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$}\\
+\multicolumn{4}{p{\textwidth}}{\scriptsize \rule{0pt}{1em}This table presents regression discontinuity estimates with the proportion of degrees awarded to women as the outcome. Bias-corrected estimates use a second-order polynomial to approximate curvatures near the cutoff. Heteroskedasticity-robust standard errors are also reported for bias-corrected estimates.}\\
+\end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{Difference-in-Differences Results: Bachelor's Degree}
+\begin{center}
+\begin{tabularx}{\textwidth}{l *{4}{>{\centering\arraybackslash}X}}
+\toprule
+ & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Model 1 & Model 2 & Model 3 & Model 4 \\
+\midrule
+Treat $\times$ Post          & $-0.019$  & $-0.012$  & $0.006$   & $0.002$   \\
+                             & $(0.017)$ & $(0.017)$ & $(0.014)$ & $(0.015)$ \\
+\midrule
+Institution FE               & Yes       & No        & Yes       & No        \\
+State FE                     & No        & Yes       & No        & Yes       \\
+Num. obs.                    & $18202$   & $18202$   & $18637$   & $18637$   \\
+R$^2$            & $0.641$   & $0.222$   & $0.409$   & $0.039$   \\
+Adj. R$^2$       & $0.622$   & $0.219$   & $0.379$   & $0.035$   \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of the
+                      treatment effect at the bachelor's level.}}}
+\end{tabularx}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
+\begin{table}
+\caption{Difference-in-Differences Results: Master's Degree}
+\begin{center}
+\begin{tabularx}{\textwidth}{l *{4}{>{\centering\arraybackslash}X}}
+\toprule
+ & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Model 1 & Model 2 & Model 3 & Model 4 \\
+\midrule
+Treat $\times$ Post           & $-0.016$  & $0.017$   & $0.001$   & $0.014$   \\
+                             & $(0.021)$ & $(0.016)$ & $(0.022)$ & $(0.016)$ \\
+\midrule
+Institution FE               & Yes       & No        & Yes       & No        \\
+State FE                     & No        & Yes       & No        & Yes       \\
+Num. obs.                    & $4809$    & $4809$    & $5239$    & $5239$    \\
+R$^2$           & $0.408$   & $0.176$   & $0.184$   & $0.057$   \\
+Adj. R$^2$       & $0.372$   & $0.163$   & $0.137$   & $0.042$   \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of the
+                      treatment effect at the master's level.}}}
+\end{tabularx}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
+\begin{table}
+\caption{Difference-in-Differences Results: Doctorate Degree}
+\begin{center}
+\begin{tabularx}{\textwidth}{l *{4}{>{\centering\arraybackslash}X}}
+\toprule
+ & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Model 1 & Model 2 & Model 3 & Model 4 \\
+\midrule
+Treat $\times$ Post          & $-0.023$  & $-0.018$  & $-0.037^{+}$ & $-0.043^{+}$ \\
+                             & $(0.039)$ & $(0.035)$ & $(0.022)$    & $(0.022)$    \\
+\midrule
+Institution FE               & Yes       & No        & Yes          & No           \\
+State FE                     & No        & Yes       & No           & Yes          \\
+Num. obs.                    & $2503$    & $2503$    & $3143$       & $3143$       \\
+R$^2$            & $0.240$   & $0.088$   & $0.149$      & $0.070$      \\
+Adj. R$^2$       & $0.186$   & $0.061$   & $0.100$      & $0.049$      \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of the
+                      treatment effect at the doctoral level.}}}
+\end{tabularx}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
+\begin{table}
+\caption{DiD Heterogeneity Analysis: Bachelor's Degree}
+\begin{center}
+\begin{tabular}{l c c c c}
+\toprule
+ & \multicolumn{2}{c}{Top/Non-Top 75} & \multicolumn{2}{c}{Red/Blue State} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Minorities & Women & Minorities & Women \\
+\midrule
+Treat $\times$ Post                          & $-0.011$  & $-0.006$      & $0.188^{**}$  & $0.029$       \\
+                                             & $(0.017)$ & $(0.015)$     & $(0.055)$     & $(0.021)$     \\
+Top Institution                              & $-0.033$  & $-0.022^{+}$  &               &               \\
+                                             & $(0.020)$ & $(0.013)$     &               &               \\
+Treat $\times$ Post $\times$ Top Institution & $-0.004$  & $0.067^{***}$ &               &               \\
+                                             & $(0.028)$ & $(0.015)$     &               &               \\
+Red State                                    &           &               & $0.084^{*}$   & $0.040^{***}$ \\
+                                             &           &               & $(0.034)$     & $(0.011)$     \\
+Blue State                                   &           &               & $0.073^{**}$  & $0.055^{***}$ \\
+                                             &           &               & $(0.026)$     & $(0.011)$     \\
+Treat $\times$ Post $\times$ Red State       &           &               & $-0.203^{**}$ & $-0.044$      \\
+                                             &           &               & $(0.065)$     & $(0.041)$     \\
+Treat $\times$ Post $\times$ Blue State      &           &               & $-0.101$      & $-0.037$      \\
+                                             &           &               & $(0.088)$     & $(0.026)$     \\
+\midrule
+Year FE                                      & Yes       & Yes           & Yes           & Yes           \\
+State FE                                     & Yes       & Yes           & No            & No            \\
+Num. obs.                                    & $18202$   & $18637$       & $18147$       & $18582$       \\
+R$^2$                           & $0.224$   & $0.040$       & $0.046$       & $0.010$       \\
+Adj. R$^2$                      & $0.220$   & $0.036$       & $0.044$       & $0.009$       \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{\parbox{1\linewidth}{\vspace{2pt}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$. \\
+                      This table presents difference-in-differences estimates of heterogeneous treatment effects at the bachelor's level for top 75 institutions vs. non-top 75 institutions (left 2 columns), and red/blue/purple states (right 2 columns). For top vs. non-top regressions, non-top serves as the baseline level, and for red/blue/purple states, purple is the baseline level.}}}
+\end{tabular}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
+\begin{table}
+\caption{RD Results: Top 75 \& Non-Top 75 Institutions, Bachelor's Degree}
+\centering
+\begin{tabularx}{\textwidth}{l>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\toprule
+  & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Top 75 & Non-top 75 & Top 75 & Non-top 75 \\
+\midrule
+Conventional & \num{-0.016} & \num{-0.020} & \num{0.005} & \num{0.034}\\
+ & (\num{0.046}) & (\num{0.045}) & (\num{0.019}) & (\num{0.024})\\
+Bias-Corrected & \num{-0.027} & \num{-0.033} & \num{-0.011} & \num{0.040}^+\\
+ & (\num{0.046}) & (\num{0.045}) & (\num{0.019}) & (\num{0.024})\\
+Robust & \num{-0.027} & \num{-0.033} & \num{-0.011} & \num{0.040}\\
+ & (\num{0.055}) & (\num{0.051}) & (\num{0.023}) & (\num{0.029})\\
+\midrule
+Obs. Left & \num{116} & \num{839} & \num{116} & \num{854}\\
+Obs. Right & \num{330} & \num{1962} & \num{335} & \num{2006}\\
+Effective Obs. Left & \num{77} & \num{504} & \num{56} & \num{548}\\
+Effective Obs. Right & \num{152} & \num{787} & \num{85} & \num{902}\\
+Cutoff & \num{4} & \num{4} & \num{4} & \num{4}\\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize \rule{0pt}{1em}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$}\\
+\multicolumn{5}{p{\textwidth}}{\scriptsize \rule{0pt}{1em}This table presents regression discontinuity estimates for top 75 institutions and non-top 75 institutions separately. Bias-corrected estimates use a second-order polynomial to approximate curvatures near the cutoff. Heteroskedasticity-robust standard errors are also reported for bias-corrected estimates.}\\
+\end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{RD Results: Blue \& Red States, Bachelor's Degree}
+\centering
+\begin{tabularx}{\textwidth}{l>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\toprule
+  & \multicolumn{2}{c}{Minorities} & \multicolumn{2}{c}{Women} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Blue States & Red States & Blue States & Red States \\
+\midrule
+Conventional & \num{-0.034} & \num{0.028} & \num{0.037} & \num{0.117}\\
+ & (\num{0.053}) & (\num{0.056}) & (\num{0.027}) & (\num{0.196})\\
+Bias-Corrected & \num{-0.052} & \num{0.022} & \num{0.044} & \num{0.140}\\
+ & (\num{0.053}) & (\num{0.056}) & (\num{0.027}) & (\num{0.196})\\
+Robust & \num{-0.052} & \num{0.022} & \num{0.044} & \num{0.140}\\
+ & (\num{0.062}) & (\num{0.066}) & (\num{0.037}) & (\num{0.245})\\
+\midrule
+Obs. Left & \num{531} & \num{254} & \num{540} & \num{255}\\
+Obs. Right & \num{1763} & \num{67} & \num{1799} & \num{67}\\
+Effective Obs. Left & \num{387} & \num{47} & \num{288} & \num{24}\\
+Effective Obs. Right & \num{763} & \num{37} & \num{425} & \num{23}\\
+Cutoff & \num{4} & \num{4} & \num{4} & \num{4}\\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize \rule{0pt}{1em}$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{+}p<0.1$}\\
+\multicolumn{5}{p{\textwidth}}{\scriptsize \rule{0pt}{1em}This table presents regression discontinuity estimates for blue states and red states separately. Bias-corrected estimates use a second-order polynomial to approximate curvatures near the cutoff. Heteroskedasticity-robust standard errors are also reported for bias-corrected estimates.}\\
+\end{tabularx}
+\end{table}
